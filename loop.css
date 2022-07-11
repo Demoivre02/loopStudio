@@ -1,0 +1,383 @@
+* *::after *::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Alata', sans-serif;
+}
+header{
+    background-image: url(images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    padding: .5em  0em 5em 0;
+    margin-bottom: 5em;
+    max-width: 100%;
+}
+ul.navbar-nav{
+    position: relative;
+}
+nav .navbar-nav li a::after{
+    color:black;
+    content: '';
+    width: 100%;
+    height: 15em;
+    position: absolute;
+}
+.navbar-brand{
+      font-size: 1.5rem;
+}
+.hero-header{
+    letter-spacing: .3rem;
+    border: 1px solid white;
+    color: white;
+    padding:1em 1em;
+    width: 35%;
+    font-size: 2rem;
+    margin-left: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3em;
+    margin-top: 0;
+}
+div.row{
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: auto auto 6em auto;
+
+}
+img.interactive{
+    /* position: absolute; */
+    width: 45%;
+    height: 50vh;
+    clip-path: polygon(0% 0%, 0% 100%, 
+    74% 100%, 74% 32%, 100% 32%, 100% 100%,
+     51% 100%, 100% 100%, 100% 0%);
+     margin-left: 3em;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    width: 60%;
+    letter-spacing: .15rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 75%; 
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.text{
+     font-size: 15px;
+    position: relative;
+    right: 5em;
+    display: flex;
+    align-self: flex-end;
+    height: 40%;
+    width: 50%;
+    /* text-align: left; */
+    padding-bottom: 0;
+}
+.flex{
+    margin: 3em auto 3em auto;
+    display: flex;
+    width: 82%;
+    justify-content: space-between;
+}
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 12px;
+    background:transparent ;
+    padding: 0px 20px 0px 20px;
+    border: solid #000000 1px;
+    text-decoration: none;
+    word-spacing: 0.3rem;
+  }
+  
+  .btn:hover {
+    background: #000000;
+    text-decoration: none;
+    color: white;
+  }
+h3{
+  font-weight: 100;
+  font-family: 'Josefin Sans', sans-serif;
+}.grid{
+    margin: 1em auto 3em auto;
+    width: 83%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-images{
+    height: 200px;
+    z-index: -1;
+    position: relative;
+}
+.grid-images:hover{
+    opacity: 1.6;
+    -webkit-animation: shake 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shake 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+
+  @keyframes shake {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  
+
+h5{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    bottom: 3em;
+    left: 1em;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+}
+footer{
+    background-color: black;
+    padding-bottom: 1em;
+}
+.icon{
+    color: white;
+    padding: 1em 0.2em 1em 0.2em;
+}
+.brand{
+    font-size: 1.5rem;
+    color: white;
+}
+.row1{
+    position: relative;
+    display: flex;
+    width: 50%;
+}
+.row1 ul{
+    display: flex;
+    align-content: center;
+}
+.row1 ul li{
+    list-style: none;
+} 
+.row1 ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.copyright{
+    width: 30%;
+    color: white;
+}
+@media(max-width:700px){
+    * *::after *::before{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+    header{
+        background-image: url(images/desktop/image-hero.jpg);
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        padding: .5em  0em 3em 0;
+        margin-bottom: 5em;
+        width: 100%;
+        max-width: 100%;
+    }
+    ul.navbar-nav{
+        position: relative;
+    }
+    nav .navbar-nav li a::before{
+        color: red;
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        color: black;
+    }
+    .navbar-brand{
+          font-size: 1.5rem;
+    }
+    .hero-header{
+        margin: auto;
+        border: 1px solid white;
+        color: white;
+        padding: 1em;
+        font-size: 2rem;
+        width: 90%;
+    }
+    nav{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3em;
+        margin-top: 0;
+    }
+    div.row{
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: auto auto 6em auto;
+    
+    }
+    img.interactive{
+        width: 100%;
+        height: 100vh;
+         margin-bottom: 2em;
+    }
+    h1{border: 2px solid red;
+        width: 100%;
+        letter-spacing: .1rem;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 1em;
+
+    }
+    p{
+        width: 105%; 
+        margin-bottom: 0;
+        line-height: 2;
+    }
+    .text{
+        margin: auto;
+        border: 2px solid blue;
+        font-size: 15px;
+        position: relative;
+        right: 5em;
+        display: flex;
+        align-self: flex-end;
+        height: 40%;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+        margin-left: 6em;
+    }
+    .flex{
+        margin: 3em auto 3em auto;
+        display: block;
+        width: 82%;
+        justify-content: space-between;
+    }
+    .btn {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0px;
+        font-family: Arial;
+        color: #000000;
+        font-size: 12px;
+        background:transparent ;
+        padding: 0px 20px 0px 20px;
+        border: solid #000000 1px;
+        text-decoration: none;
+        word-spacing: 0.3rem;
+        position: absolute;
+      }
+      
+      .btn:hover {
+        background: #000000;
+        text-decoration: none;
+        color: white;
+      }
+    h3{
+    position: relative;
+    left: 2em;
+      font-weight: 100;
+      width: 100%;
+      margin: auto;
+      font-size: 2rem;
+    }.grid{
+        width: 100%;
+        display: block;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grid-images{
+        background-image: url(images/mobile/image-deep-earth.jpg);
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+        position: relative;
+    }
+    h5{
+        text-transform: uppercase;
+        font-weight: 100;
+        position: relative;
+        bottom: 3em;
+        left: 1em;
+        color: white;
+        font-size: 20px;
+        width: 40%;
+    }
+    footer{
+        background-color: black;
+        padding-bottom: 1em;
+    }
+    .icon{
+        color: white;
+        padding: 1em 0.2em 1em 0.2em;
+    }
+    .brand{
+        font-size: 1.5rem;
+        color: white;
+    }
+    .row1{
+        position: relative;
+        display: flex;
+        width: 50%;
+    }
+    .row1 ul{
+        display: flex;
+        align-content: center;
+    }
+    .row1 ul li{
+        list-style: none;
+    } 
+    .row1 ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 0 1em;
+    }
+    .flex1{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+    .copyright{
+        color: white;
+    }
+    /* @media(max-width:700px){
+    
+    } */
+}
